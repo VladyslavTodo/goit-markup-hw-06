@@ -773,7 +773,7 @@ button {
   resize: none;
 }
 
-.modal-form-textarea::placeholder {
+.modal-form-input.textarea::placeholder {
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.04em;
