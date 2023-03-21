@@ -460,7 +460,7 @@
           </ul>
         </div>
         <form class="footer-form">
-          <h3 class="footer-social-media">Subscribe</h3>
+          <p class="footer-social-media">Subscribe</p>
           <input class="form-input" type="email" placeholder="E-mail" />
           <button class="form-button" type="submit">
             Subscribe
@@ -543,16 +543,37 @@
             id="modal-form-textarea"
           ></textarea>
 
-          <input
+          <!-- Checkbox через svg css -->
+          <!-- <input
             id="check"
-            class="modal-form-checkbox-desk hiden"
+            class="modal-form-checkbox-desk hidden"
             type="checkbox"
             name="user-policy"
           />
           <label class="modal-form-checkbox" for="check">
             I accept the terms and conditions of the&nbsp;
             <a href="">Privacy Policy</a>
-          </label>
+          </label> -->
+
+          <!-- /Checkbox через svg css -->
+
+          <div class="modal-checkbox">
+            <input
+              id="checkbox"
+              type="checkbox"
+              class="modal-checkbox-input hidden"
+              name="user-policy"
+            />
+            <label class="modal-checkbox-label" for="checkbox">
+              <span class="modal-checkbox-custum">
+                <svg class="modal-checkbox-ico" width="10" height="8">
+                  <use href="./images/icons/icons.svg#icon-agree" />
+                </svg>
+              </span>
+              I accept the terms and conditions of the&nbsp;
+              <a href="">Privacy Policy</a>
+            </label>
+          </div>
 
           <button class="modal-form-button" type="submit">Send</button>
         </form>
